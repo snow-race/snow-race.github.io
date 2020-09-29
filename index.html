@@ -7,26 +7,15 @@
     <link rel='manifest' href='/manifest.json'>
     <link rel="apple-touch-icon" href="/icon-512x512.png">
     <title>Title</title>
-    <script>
-        window.addEventListener('load', e => {
-          new PWAConfApp();
-          registerSW();
-        });
-        
-        async function registerSW() { 
-          if ('serviceWorker' in navigator) { 
-            try {
-              await navigator.serviceWorker.register('./sw.js'); 
-            } catch (e) {
-              alert('ServiceWorker registration failed. Sorry about that.'); 
-            }
-          } else {
-            document.querySelector('.alert').removeAttribute('hidden'); 
-          }
-        }
-    </script>
 </head>
 <body>
-  3
+  1
+    
+<script type="module">
+    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+    const el = document.createElement('pwa-update');
+    document.body.appendChild(el);
+</script>
 </body>
 </html>
