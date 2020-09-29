@@ -1,5 +1,4 @@
 {
-    "name": "snow-race",
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone",
@@ -8,6 +7,7 @@
     "app_name": "snow-race",
     "short_name": "snow-race",
     "description": "snow-race",
+    "name": "snow-race",
     "icons": [
         {
             "src": "/icon-192x192.png",
